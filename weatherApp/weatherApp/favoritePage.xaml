@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="weatherApp.favoritePage"
+             BackgroundColor="DeepSkyBlue">
+    <ContentPage.Content>
+        
+        <StackLayout >
+            
+            <StackLayout>
+                <Button x:Name="preference" Text="preference"  Clicked="preference_Clicked" BackgroundColor="Accent" />
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Today Weather" 
+            HorizontalOptions="Center"     
+            VerticalOptions="CenterAndExpand" TextColor="Yellow" FontSize="40"/>
+                <Entry x:Name="entry" Placeholder="" Keyboard="Text" />
+                <Button x:Name="getWeather" Text="look up" Clicked="getWeather_Clicked" />
+            </StackLayout>
+           
+            
+        </StackLayout>
+        
+
+
+    </ContentPage.Content>
+</ContentPage>

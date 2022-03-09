@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="weatherApp.MainPage"
+             BackgroundColor="SkyBlue">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="SkyBlue" >
+        <Button x:Name="Search" Text="search" Clicked="Search_Clicked"  BackgroundColor="DeepSkyBlue"/>
+        <Image Source="weather.jpg" />
+        <Label Text="Welcome to Today Weather!" 
+           HorizontalOptions="Center"     
+            VerticalOptions="CenterAndExpand" />
+       <!-- <Picker x:Name="pickerCity" Title="City"/> 
+        <Button x:Name="fetchButton" Text="Fetch" Clicked="fetchButton_Clicked" BackgroundColor="DeepSkyBlue" /> -->
+        <Button x:Name="perth" Text="Perth" Clicked="perth_Clicked" BackgroundColor="DeepSkyBlue" />
+        <Button x:Name="naples" Text="Naples" Clicked="naples_Clicked" BackgroundColor="SkyBlue"/>
+        <Button x:Name="paris" Text="Paris" Clicked="paris_Clicked" BackgroundColor="DeepSkyBlue"/>
+        <Button x:Name="newyork" Text="New York" Clicked="newyork_Clicked" BackgroundColor="SkyBlue"/>
+        <Button x:Name="london" Text="London" Clicked="london_Clicked"  BackgroundColor="DeepSkyBlue"/>
+    </StackLayout>
+
+</ContentPage>
